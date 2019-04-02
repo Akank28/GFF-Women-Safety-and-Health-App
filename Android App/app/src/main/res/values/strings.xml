@@ -1,18 +1,10 @@
 <resources>
-    <string name="app_name">GFF</string>
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Akanksha Sinha</string>
-    <string name="nav_header_subtitle">Be Safe, Be Happy</string>
-    <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Settings</string>
-    <string name="main_slideshow_desc">Period Tracker</string>
-    <string name="main_heading">Trending</string>
-    <string name="title_activity_health_activity">health_activity</string>
+    <string name="app_name">CodeBusters</string>
+    <string name="title_home">Home</string>
+    <string name="title_health">Health</string>
+    <string name="title_scheme">Scheme</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="title_activity_health_analysis">health_analysis</string>
-    <string name="title_activity_period_tracker">PeriodTracker</string>
-    <string name="title_activity_setting">Setting</string>
+    <string name="title_activity_splash">Splash</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>

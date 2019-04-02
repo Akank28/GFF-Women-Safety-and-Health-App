@@ -4,11 +4,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".home">
+    tools:context=".homeFragment">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="55dp">
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        >
 
         <ImageView
             android:id="@+id/home_slideshow"
@@ -19,7 +24,7 @@
             android:layout_marginTop="8dp"
             android:background="@color/blue"
             android:src="@drawable/girl"
-            android:contentDescription="@string/main_slideshow_desc"
+            android:contentDescription="none"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -36,8 +41,9 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/home_slideshow">
 
+
             <LinearLayout
-                android:id="@+id/imageView2"
+                android:id="@+id/emergency_home"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_margin="18dp"
@@ -50,11 +56,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:src="@drawable/ic_map_pin_marked" />
+                    android:src="@drawable/ic_sos" />
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/imageView3"
+                android:id="@+id/news_home"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_margin="18dp"
@@ -66,7 +72,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:src="@drawable/ic_wheelchair" />
+                    android:src="@drawable/ic_newspaper" />
             </LinearLayout>
         </LinearLayout>
 
@@ -81,6 +87,7 @@
             app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
             <LinearLayout
+                android:id="@+id/period_home"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_margin="18dp"
@@ -91,9 +98,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:src="@drawable/ic_protection" />
+                    android:src="@drawable/ic_sanitary" />
             </LinearLayout>
             <LinearLayout
+                android:id="@+id/health_home"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_margin="18dp"
@@ -105,11 +113,12 @@
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_gravity="center"
-                    android:src="@drawable/compress" />
+                    android:src="@drawable/ic_doctor" />
             </LinearLayout>
         </LinearLayout>
 
 
     </android.support.constraint.ConstraintLayout>
+    </ScrollView>
 
 </FrameLayout>

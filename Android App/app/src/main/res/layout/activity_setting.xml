@@ -10,14 +10,14 @@
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
+        android:theme="@style/Theme.AppCompat">
 
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay" >
+            app:popupTheme="@style/Theme.AppCompat" >
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -26,16 +26,19 @@
                 android:id="@+id/setting_back"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:padding="5dp"
                 android:contentDescription="Setting back button"
                 android:src="@drawable/ic_arrow_back_24dp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Settings"
 
-                android:textSize="20sp"
-                android:textColor="@color/emergency"
-                android:layout_marginStart="18dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+
+                    android:text="Settings"
+                    android:textAppearance="@android:style/TextAppearance.Material.Body1"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
             </LinearLayout>
         </android.support.v7.widget.Toolbar>
 
@@ -43,21 +46,42 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@color/white">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/setting_profile"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:fontFamily="@font/roboto"
-            android:text="Profile"
-            android:textColor="@color/black"
-            android:textSize="22sp" />
+            android:orientation="vertical"
+            android:layout_marginTop="18dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:src="@drawable/gff"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/setting_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:paddingLeft="10dp"
+                android:text="NAME"
+                android:textAppearance="@android:style/TextAppearance.Material.Headline"
+                android:textColor="@android:color/black" />
+            <TextView
+                android:id="@+id/setting_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="example@example.com"
+                android:textColor="@color/black"
+                android:paddingLeft="15dp"
+                android:paddingBottom="5dp"/>
+        </LinearLayout>
         <View
             android:layout_width="match_parent"
             android:layout_height="2dp"
@@ -72,6 +96,8 @@
             android:layout_margin="5dp"
             android:fontFamily="@font/roboto"
             android:text="Emergency Contact"
+            android:drawableLeft="@drawable/ic_contact"
+            android:drawablePadding="5dp"
             android:textColor="@color/black"
             android:textSize="22sp" />
         <View
@@ -80,6 +106,16 @@
             android:background="@color/light_black"
             android:layout_margin="2dp"
             />
+        <TextView
+            android:id="@+id/setting_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:drawableStart="@drawable/ic_lock_open_black_24dp"
+            android:drawablePadding="5dp"
+            android:layout_margin="5dp"/>
 
 
     </LinearLayout>

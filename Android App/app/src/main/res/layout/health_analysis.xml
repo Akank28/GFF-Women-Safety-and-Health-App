@@ -10,14 +10,15 @@
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
+        android:theme="@style/Theme.AppCompat"
+        >
 
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="@color/blue"
-            app:popupTheme="@style/AppTheme.PopupOverlay" >
+            android:background="@color/colorPrimary"
+            app:popupTheme="@style/Theme.AppCompat" >
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -34,7 +35,7 @@
                     android:text="Health Analysis"
 
                     android:textSize="20sp"
-                    android:textColor="@color/emergency"
+                    android:textColor="@color/white"
                     android:layout_marginStart="18dp"/>
             </LinearLayout>
         </android.support.v7.widget.Toolbar>
@@ -46,7 +47,8 @@
         android:id="@+id/scrool_ques"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="1dp">
+        android:layout_margin="1dp"
+        android:background="@drawable/black_gradient">
 
         <android.support.constraint.ConstraintLayout
 

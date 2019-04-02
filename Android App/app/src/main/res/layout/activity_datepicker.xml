@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70dp"
+        >
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="70dp"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/button_1"
+                android:layout_width="match_parent"
+                android:layout_height="48sp"
+                android:background="@color/red1"
+                android:gravity="bottom"
+                android:text="JANUARY"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/date1"
+                android:layout_width="match_parent"
+                android:layout_height="32sp"
+                android:textAlignment="center"
+                android:gravity="bottom"
+                />
+
+
+            <Button
+                android:id="@+id/button_2"
+                android:layout_width="match_parent"
+                android:layout_height="48sp"
+                android:background="@color/red13"
+                android:text="FEBRUARY"
+                android:textAlignment="center"
+                android:gravity="bottom"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="32sp"
+                android:id="@+id/date2"
+                android:textAlignment="center"
+                android:gravity="bottom"
+                />
+
+            <Button
+                android:id="@+id/button_3"
+                android:layout_width="match_parent"
+                android:layout_height="48sp"
+                android:background="@color/red3"
+                android:text="MARCH"
+                android:textAlignment="center"
+                android:gravity="bottom"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="32sp"
+                android:id="@+id/date3"
+                android:textAlignment="center"
+                android:gravity="bottom"
+                />
+
+
+            <Button
+                android:id="@+id/button_4"
+                android:layout_width="match_parent"
+                android:layout_height="48sp"
+                android:background="@color/red4"
+                android:text="APRIL"
+                android:textAlignment="center"
+                android:gravity="bottom"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="32sp"
+                android:textAlignment="center"
+                android:gravity="bottom"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="48sp"
+                android:background="@color/red5"
+                android:text="MAY"
+                android:textAlignment="center"
+                android:gravity="bottom"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="32sp"
+
+                android:textAlignment="center"
+                android:gravity="bottom"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="48sp"
+                android:background="@color/red6"
+                android:text="JUNE"
+                android:textAlignment="center"
+                android:gravity="bottom"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="32sp"
+
+                android:textAlignment="center"
+                android:gravity="bottom"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="48sp"
+                android:background="@color/red7"
+                android:text="JULY"
+                android:textAlignment="center"
+                android:gravity="bottom"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="32sp"
+
+                android:textAlignment="center"
+                android:gravity="bottom"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="48sp"
+                android:background="@color/red8"
+                android:text="AUGUST"
+                android:textAlignment="center"
+                android:gravity="bottom"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="32sp"
+
+                android:textAlignment="center"
+                android:gravity="bottom"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="48sp"
+                android:background="@color/red9"
+                android:text="SEPTEMBER"
+                android:textAlignment="center"
+                android:gravity="bottom"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="32sp"
+
+                android:textAlignment="center"
+                android:gravity="bottom"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="48sp"
+                android:background="@color/red10"
+                android:text="OCTOBER"
+                android:textAlignment="center"
+                android:gravity="bottom"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="32sp"
+
+                android:textAlignment="center"
+                android:gravity="bottom"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="48sp"
+                android:background="@color/red11"
+                android:text="NOVEMBER"
+                android:textAlignment="center"
+                android:gravity="bottom"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="32sp"
+
+                android:textAlignment="center"
+                android:gravity="bottom"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="48sp"
+                android:background="@color/red12"
+                android:text="DECEMBER"
+                android:textAlignment="center"
+                android:gravity="bottom"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="32sp"
+                android:textAlignment="center"
+                android:gravity="bottom"
+                />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        android:text="Send"
+        android:background="@color/blue"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Send"/>
+
+    <Button
+        android:text="Predict"
+        android:background="@color/colorPrimaryDark"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/predict"
+        android:visibility="gone"/>
+
+</android.support.design.widget.CoordinatorLayout>
